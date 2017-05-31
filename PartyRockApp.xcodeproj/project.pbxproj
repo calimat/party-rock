@@ -58,9 +58,9 @@
 				F6D9DFA81EDE5CB800F9D4BD /* View */,
 				F6D9DFA71EDE5C9900F9D4BD /* Controller */,
 				F6D9DF951EDE5C0500F9D4BD /* AppDelegate.swift */,
+				F6D9DF9E1EDE5C0500F9D4BD /* LaunchScreen.storyboard */,
 				F6D9DF991EDE5C0500F9D4BD /* Main.storyboard */,
 				F6D9DF9C1EDE5C0500F9D4BD /* Assets.xcassets */,
-				F6D9DF9E1EDE5C0500F9D4BD /* LaunchScreen.storyboard */,
 				F6D9DFA11EDE5C0500F9D4BD /* Info.plist */,
 			);
 			path = PartyRockApp;
