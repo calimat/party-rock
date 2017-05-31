@@ -145,12 +145,26 @@
                     <view key="view" contentMode="scaleToFill" id="Hr4-ws-vHY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dUK-jm-WKB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="219"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="219" id="an3-gL-ffu"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90240234370000005" green="0.90240234370000005" blue="0.90240234370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dUK-jm-WKB" firstAttribute="top" secondItem="Hr4-ws-vHY" secondAttribute="top" id="HgU-Er-g6G"/>
+                            <constraint firstItem="dUK-jm-WKB" firstAttribute="leading" secondItem="Hr4-ws-vHY" secondAttribute="leading" id="Jas-p3-6P0"/>
+                            <constraint firstAttribute="trailing" secondItem="dUK-jm-WKB" secondAttribute="trailing" id="b2H-Gd-pdg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Y0-ra-yL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="703" y="37"/>
+            <point key="canvasLocation" x="701.60000000000002" y="36.431784107946029"/>
         </scene>
     </scenes>
     <resources>
