@@ -126,10 +126,31 @@
                             <constraint firstAttribute="trailing" secondItem="gQP-g3-f6T" secondAttribute="trailing" id="zM1-Mo-kvh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="Nhs-XR-TmH" kind="showDetail" identifier="VideoVC" id="TLx-d5-29R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+        <!--VideoVC-->
+        <scene sceneID="XR6-4S-4Ve">
+            <objects>
+                <viewController id="Nhs-XR-TmH" customClass="VideoVC" customModule="PartyRockApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TBm-Fv-mOd"/>
+                        <viewControllerLayoutGuide type="bottom" id="QsB-ZO-gNe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hr4-ws-vHY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Y0-ra-yL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="703" y="37"/>
         </scene>
     </scenes>
     <resources>
