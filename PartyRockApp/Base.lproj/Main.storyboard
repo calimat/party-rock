@@ -21,12 +21,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rXS-Nw-pO6">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partybanner" translatesAutoresizingMaskIntoConstraints="NO" id="rXS-Nw-pO6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="HtL-Yl-Qfi"/>
+                                </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opa-8b-2tT">
+                                <rect key="frame" x="0.0" y="174" width="375" height="37"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fLG-fR-aF2">
+                                        <rect key="frame" x="8" y="3" width="359" height="33"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OM1-Hj-7FI">
+                                                <rect key="frame" x="0.0" y="0.0" width="119.5" height="33"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                                <state key="normal" title="Top Videos">
+                                                    <color key="titleColor" red="0.90240234374999995" green="0.41614745781934598" blue="0.86880801013843656" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sT-PT-AY6">
+                                                <rect key="frame" x="119.5" y="0.0" width="120" height="33"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                                <state key="normal" title="Top Songs">
+                                                    <color key="titleColor" red="0.57499999994999995" green="0.57499999994999995" blue="0.57499999994999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2l-H0-32U">
+                                                <rect key="frame" x="239.5" y="0.0" width="119.5" height="33"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                                <state key="normal" title="Events">
+                                                    <color key="titleColor" red="0.57499999994999995" green="0.57499999994999995" blue="0.57499999994999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90240234374999995" green="0.90240234374999995" blue="0.90240234374999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="fLG-fR-aF2" secondAttribute="trailing" constant="8" id="IIg-KZ-OVI"/>
+                                    <constraint firstItem="fLG-fR-aF2" firstAttribute="top" secondItem="opa-8b-2tT" secondAttribute="top" constant="3" id="J1B-ng-8oT"/>
+                                    <constraint firstAttribute="height" constant="37" id="ere-7c-0qp"/>
+                                    <constraint firstItem="fLG-fR-aF2" firstAttribute="leading" secondItem="opa-8b-2tT" secondAttribute="leading" constant="8" id="p3o-Wu-LpG"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="opa-8b-2tT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5uQ-ir-GNv"/>
+                            <constraint firstAttribute="trailing" secondItem="opa-8b-2tT" secondAttribute="trailing" id="DcR-BZ-fVV"/>
+                            <constraint firstItem="opa-8b-2tT" firstAttribute="top" secondItem="rXS-Nw-pO6" secondAttribute="bottom" id="QSy-n4-nOt"/>
                             <constraint firstAttribute="trailing" secondItem="rXS-Nw-pO6" secondAttribute="trailing" id="Smb-TX-J0i"/>
                             <constraint firstItem="rXS-Nw-pO6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bfs-Jj-fFV"/>
                             <constraint firstItem="rXS-Nw-pO6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fwa-iV-6Cb"/>
@@ -38,4 +82,7 @@
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="partybanner" width="610" height="297"/>
+    </resources>
 </document>
