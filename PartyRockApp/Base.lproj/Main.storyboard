@@ -6,8 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="still time.ttf">
+            <string>StillTime-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
@@ -65,17 +71,42 @@
                                     <constraint firstItem="fLG-fR-aF2" firstAttribute="leading" secondItem="opa-8b-2tT" secondAttribute="leading" constant="8" id="p3o-Wu-LpG"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="67" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gQP-g3-f6T">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gQP-g3-f6T">
                                 <rect key="frame" x="0.0" y="211" width="375" height="456"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="67" id="YLB-hL-DBz">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="67"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="YLB-hL-DBz">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YLB-hL-DBz" id="eyb-cV-vCm">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="66.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="84.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partybanner" translatesAutoresizingMaskIntoConstraints="NO" id="ltV-FJ-kw5">
+                                                    <rect key="frame" x="8" y="8" width="68" height="68"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="68" id="Ckm-lj-YU3"/>
+                                                        <constraint firstAttribute="width" constant="68" id="p48-ja-ol6"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where the sun goes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5b-oL-VEg">
+                                                    <rect key="frame" x="84" y="19.5" width="283" height="47"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="47" id="1Br-fQ-zyO"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="30"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" red="0.9304889029319392" green="0.99214843745000003" blue="0.23765055743603072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="ltV-FJ-kw5" firstAttribute="leading" secondItem="eyb-cV-vCm" secondAttribute="leadingMargin" id="8WY-hD-IDg"/>
+                                                <constraint firstItem="F5b-oL-VEg" firstAttribute="trailing" secondItem="eyb-cV-vCm" secondAttribute="trailingMargin" id="LCK-hL-ifr"/>
+                                                <constraint firstItem="F5b-oL-VEg" firstAttribute="centerY" secondItem="eyb-cV-vCm" secondAttribute="centerY" id="Ou9-Ze-HYy"/>
+                                                <constraint firstItem="F5b-oL-VEg" firstAttribute="leading" secondItem="ltV-FJ-kw5" secondAttribute="trailing" constant="8" id="ha6-Ns-p92"/>
+                                                <constraint firstItem="ltV-FJ-kw5" firstAttribute="centerY" secondItem="eyb-cV-vCm" secondAttribute="centerY" id="pLG-Hb-06E"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
