@@ -75,7 +75,7 @@
                                 <rect key="frame" x="0.0" y="211" width="375" height="456"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="YLB-hL-DBz">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="YLB-hL-DBz" customClass="PartyCell" customModule="PartyRockApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YLB-hL-DBz" id="eyb-cV-vCm">
@@ -108,6 +108,10 @@
                                                 <constraint firstItem="ltV-FJ-kw5" firstAttribute="centerY" secondItem="eyb-cV-vCm" secondAttribute="centerY" id="pLG-Hb-06E"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoPreviewImage" destination="ltV-FJ-kw5" id="H6t-BS-km4"/>
+                                            <outlet property="videoTitle" destination="F5b-oL-VEg" id="LYr-M1-FWQ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
