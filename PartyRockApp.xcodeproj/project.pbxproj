@@ -15,6 +15,7 @@
 		F6D9DFAB1EDE616100F9D4BD /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6D9DFAA1EDE616100F9D4BD /* still time.ttf */; };
 		F6D9DFAE1EDE62C600F9D4BD /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D9DFAD1EDE62C600F9D4BD /* VideoVC.swift */; };
 		F6D9DFB01EDFC88A00F9D4BD /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D9DFAF1EDFC88A00F9D4BD /* PartyCell.swift */; };
+		F6D9DFB21EDFCA1F00F9D4BD /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D9DFB11EDFCA1F00F9D4BD /* PartyRock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F6D9DFAA1EDE616100F9D4BD /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
 		F6D9DFAD1EDE62C600F9D4BD /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		F6D9DFAF1EDFC88A00F9D4BD /* PartyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
+		F6D9DFB11EDFCA1F00F9D4BD /* PartyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		F6D9DFA91EDE5CC100F9D4BD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F6D9DFB11EDFCA1F00F9D4BD /* PartyRock.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			files = (
 				F6D9DFAE1EDE62C600F9D4BD /* VideoVC.swift in Sources */,
 				F6D9DF981EDE5C0500F9D4BD /* MainVC.swift in Sources */,
+				F6D9DFB21EDFCA1F00F9D4BD /* PartyRock.swift in Sources */,
 				F6D9DFB01EDFC88A00F9D4BD /* PartyCell.swift in Sources */,
 				F6D9DF961EDE5C0500F9D4BD /* AppDelegate.swift in Sources */,
 			);

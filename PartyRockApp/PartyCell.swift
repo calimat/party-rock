@@ -11,7 +11,9 @@ import UIKit
 class PartyCell: UITableViewCell {
 
     @IBOutlet weak var videoTitle: UILabel!
+    
     @IBOutlet weak var videoPreviewImage: UIImageView!
+    
     override func awakeFromNib() {
         
     }
