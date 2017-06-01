@@ -17,15 +17,32 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "PartyCell", for: indexPath) as? PartyCell {
+            
+            
+            let partyRock = partyRocks[indexPath.row]
+            
+            cell.updateUI(partyRock: partyRock)
+            
+            return cell
+            
+            
+        } else {
+            return UITableViewCell()
+        }
+        
+        
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return partyRocks.count
     }
     
     
