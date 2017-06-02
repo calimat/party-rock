@@ -158,14 +158,29 @@
                                     <constraint firstAttribute="height" constant="219" id="an3-gL-ffu"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tip-Fo-lMA">
+                                <rect key="frame" x="21" y="269" width="333" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="yWo-2g-egQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.90240234370000005" green="0.90240234370000005" blue="0.90240234370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Tip-Fo-lMA" firstAttribute="top" secondItem="dUK-jm-WKB" secondAttribute="bottom" constant="50" id="0na-O3-CKG"/>
+                            <constraint firstItem="Tip-Fo-lMA" firstAttribute="leading" secondItem="Hr4-ws-vHY" secondAttribute="leadingMargin" constant="5" id="EKw-Hx-enB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tip-Fo-lMA" secondAttribute="trailing" constant="5" id="HUP-mt-L35"/>
                             <constraint firstItem="dUK-jm-WKB" firstAttribute="top" secondItem="Hr4-ws-vHY" secondAttribute="top" id="HgU-Er-g6G"/>
                             <constraint firstItem="dUK-jm-WKB" firstAttribute="leading" secondItem="Hr4-ws-vHY" secondAttribute="leading" id="Jas-p3-6P0"/>
                             <constraint firstAttribute="trailing" secondItem="dUK-jm-WKB" secondAttribute="trailing" id="b2H-Gd-pdg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titlteLbl" destination="Tip-Fo-lMA" id="eOW-qx-099"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Y0-ra-yL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
