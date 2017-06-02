@@ -36,7 +36,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let p2 = PartyRock(imageURL: imageUrlTest2, videoURL: urlTest2, videoTitle: "Video 2")
          let p3 = PartyRock(imageURL: imageUrLTest3, videoURL: urlTest3, videoTitle: "Video 3")
          let p4 = PartyRock(imageURL: imageUrLTest4, videoURL: urlTest4, videoTitle: "Video 4")
-         let p5 = PartyRock(imageURL: imageUrLTest5, videoURL: urlTest5, videoTitle: "Video 2")
+         let p5 = PartyRock(imageURL: imageUrLTest5, videoURL: urlTest5, videoTitle: "Video 5")
         
         
         
