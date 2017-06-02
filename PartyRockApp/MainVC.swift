@@ -32,11 +32,11 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let urlTest5 = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/JwQZQygg3Lk\" frameborder=\"0\" allowfullscreen></iframe>"
         
         
-        let p1 = PartyRock(imageURL: imageUrlTest1, videoURL: urlTest1, videoTitle: "RedFoo Sockin it to Ya 48 hour socks SALE")
-        let p2 = PartyRock(imageURL: imageUrlTest2, videoURL: urlTest2, videoTitle: "Video 2")
-         let p3 = PartyRock(imageURL: imageUrLTest3, videoURL: urlTest3, videoTitle: "Video 3")
-         let p4 = PartyRock(imageURL: imageUrLTest4, videoURL: urlTest4, videoTitle: "Video 4")
-         let p5 = PartyRock(imageURL: imageUrLTest5, videoURL: urlTest5, videoTitle: "Video 5")
+        let p1 = PartyRock(imageURL: imageUrlTest1, videoURL: urlTest1, videoTitle: "RedFoo Sockin it to Ya 48")
+        let p2 = PartyRock(imageURL: imageUrlTest2, videoURL: urlTest2, videoTitle: "Video 2 Something to say")
+         let p3 = PartyRock(imageURL: imageUrLTest3, videoURL: urlTest3, videoTitle: "Video 3 Arena Bay")
+         let p4 = PartyRock(imageURL: imageUrLTest4, videoURL: urlTest4, videoTitle: "Video 4 Great White")
+         let p5 = PartyRock(imageURL: imageUrLTest5, videoURL: urlTest5, videoTitle: "Video 5 Nothing to you")
         
         
         
