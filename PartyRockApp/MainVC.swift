@@ -14,7 +14,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     var partyRocks = [PartyRock]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,9 +34,9 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         let p1 = PartyRock(imageURL: imageUrlTest1, videoURL: urlTest1, videoTitle: "RedFoo Sockin it to Ya 48")
         let p2 = PartyRock(imageURL: imageUrlTest2, videoURL: urlTest2, videoTitle: "Video 2 Something to say")
-         let p3 = PartyRock(imageURL: imageUrLTest3, videoURL: urlTest3, videoTitle: "Video 3 Arena Bay")
-         let p4 = PartyRock(imageURL: imageUrLTest4, videoURL: urlTest4, videoTitle: "Video 4 Great White")
-         let p5 = PartyRock(imageURL: imageUrLTest5, videoURL: urlTest5, videoTitle: "Video 5 Nothing to you")
+        let p3 = PartyRock(imageURL: imageUrLTest3, videoURL: urlTest3, videoTitle: "Video 3 Arena Bay")
+        let p4 = PartyRock(imageURL: imageUrLTest4, videoURL: urlTest4, videoTitle: "Video 4 Great White")
+        let p5 = PartyRock(imageURL: imageUrLTest5, videoURL: urlTest5, videoTitle: "Video 5 Nothing to you")
         
         
         
@@ -69,13 +69,23 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return partyRocks.count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let partyRock = partyRocks[indexPath.row]
+        performSegue(withIdentifier: "VideoVC", sender: partyRock)
+    }
     
-
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? VideoVC {
+            if let party = sender as? PartyRock {
+                destination.partyRock = party
+            }
+        }
+    }
+    
 }
 

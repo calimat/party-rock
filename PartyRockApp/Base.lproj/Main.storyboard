@@ -180,6 +180,7 @@
                     </view>
                     <connections>
                         <outlet property="titlteLbl" destination="Tip-Fo-lMA" id="eOW-qx-099"/>
+                        <outlet property="webView" destination="dUK-jm-WKB" id="gsd-t8-rC8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Y0-ra-yL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
